@@ -4,7 +4,7 @@ string nombre = "Jhonatan", apellido = "Toro Vásquez", documento = "1036402698"
 byte edad = 26;
 var clan = "Gates";
 
-// Impresión de variables
+// Impresión de variables de una cadena literal
 Console.WriteLine(@$"Nombre: {nombre}; 
 Apellidos: {apellido}; 
 Edad: {edad}; 
