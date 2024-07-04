@@ -1,0 +1,15 @@
+/home/riwip5-023/Desktop/ProjectsGates_JhonatanToro/C#/C-Sharp/03_ejercicios/bin/Debug/net8.0/03_ejercicios
+/home/riwip5-023/Desktop/ProjectsGates_JhonatanToro/C#/C-Sharp/03_ejercicios/bin/Debug/net8.0/03_ejercicios.deps.json
+/home/riwip5-023/Desktop/ProjectsGates_JhonatanToro/C#/C-Sharp/03_ejercicios/bin/Debug/net8.0/03_ejercicios.runtimeconfig.json
+/home/riwip5-023/Desktop/ProjectsGates_JhonatanToro/C#/C-Sharp/03_ejercicios/bin/Debug/net8.0/03_ejercicios.dll
+/home/riwip5-023/Desktop/ProjectsGates_JhonatanToro/C#/C-Sharp/03_ejercicios/bin/Debug/net8.0/03_ejercicios.pdb
+/home/riwip5-023/Desktop/ProjectsGates_JhonatanToro/C#/C-Sharp/03_ejercicios/obj/Debug/net8.0/03_ejercicios.GeneratedMSBuildEditorConfig.editorconfig
+/home/riwip5-023/Desktop/ProjectsGates_JhonatanToro/C#/C-Sharp/03_ejercicios/obj/Debug/net8.0/03_ejercicios.AssemblyInfoInputs.cache
+/home/riwip5-023/Desktop/ProjectsGates_JhonatanToro/C#/C-Sharp/03_ejercicios/obj/Debug/net8.0/03_ejercicios.AssemblyInfo.cs
+/home/riwip5-023/Desktop/ProjectsGates_JhonatanToro/C#/C-Sharp/03_ejercicios/obj/Debug/net8.0/03_ejercicios.csproj.CoreCompileInputs.cache
+/home/riwip5-023/Desktop/ProjectsGates_JhonatanToro/C#/C-Sharp/03_ejercicios/obj/Debug/net8.0/03_ejercicios.sourcelink.json
+/home/riwip5-023/Desktop/ProjectsGates_JhonatanToro/C#/C-Sharp/03_ejercicios/obj/Debug/net8.0/03_ejercicios.dll
+/home/riwip5-023/Desktop/ProjectsGates_JhonatanToro/C#/C-Sharp/03_ejercicios/obj/Debug/net8.0/refint/03_ejercicios.dll
+/home/riwip5-023/Desktop/ProjectsGates_JhonatanToro/C#/C-Sharp/03_ejercicios/obj/Debug/net8.0/03_ejercicios.pdb
+/home/riwip5-023/Desktop/ProjectsGates_JhonatanToro/C#/C-Sharp/03_ejercicios/obj/Debug/net8.0/03_ejercicios.genruntimeconfig.cache
+/home/riwip5-023/Desktop/ProjectsGates_JhonatanToro/C#/C-Sharp/03_ejercicios/obj/Debug/net8.0/ref/03_ejercicios.dll
