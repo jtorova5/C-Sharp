@@ -1,0 +1,1 @@
+﻿List<string> nombresLista = new() { "Juan", "Ana", "Pedro" };
