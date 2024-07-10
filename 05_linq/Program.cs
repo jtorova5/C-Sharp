@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using System.Collections.Immutable;
+using System.ComponentModel;
 
 Console.Clear();
 
@@ -28,7 +29,7 @@ frutas[1] = "fresa";
 Console.WriteLine($"Fruta modificada: {frutas[1]}");
 
 // lista números
-var numerosLista = new List<byte> {10, 8, 9, 7, 4, 5, 6, 2, 1, 3};
+var numerosLista = new List<byte> {10, 8, 9, 7, 4, 5, 6, 2, 1, 3, 3, 10, 4, 5};
 
 // array números
 var numerosArray = new byte[] {10, 8, 9, 7, 4, 5, 6, 2, 1, 3};
@@ -67,4 +68,13 @@ foreach (var numero in numerosParesArray)
 // números ordenados de forma ascendente
 var numerosAsc = numerosArray.OrderBy(numero => numero).ToList();
 
-var numerosDesc = numerosArray.OrderByDescending(numero => numero).ToList();
+var numerosDesc = numerosArray.OrderByDescending(numero => numero);
+
+var distinct = numerosLista.Where(numero => numero > 7).Distinct().OrderBy(numero => numero).ToList();
+
+Console.WriteLine();
+Console.Write("Números sin duplicados: ");
+foreach (var item in distinct)
+{
+    Console.Write($"{item} ");
+}

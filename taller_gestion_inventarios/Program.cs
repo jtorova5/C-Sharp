@@ -20,7 +20,7 @@ List<Dictionary<string, object>> inventario = new List<Dictionary<string, object
     }
 };
 
-// calculo de total por producto
+// calculo de total por product
 void totalProductoUnitario()
 {
     foreach (var producto in inventario)
