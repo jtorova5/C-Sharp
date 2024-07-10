@@ -99,7 +99,7 @@ Console.WriteLine("-------------------------------------------------------------
 
 // 7. Obtén el primer número negativo en una lista de enteros, o un valor por defecto si no hay ninguno.
 
-var listaEnterosConNegativo = new List<int> { 10, 13, 9, 8, 25, 30, 22, 11, 7, 6, 2, 9, 77, -2};
+var listaEnterosConNegativo = new List<int> { 10, 13, 9, 8, 25, 30, 22, 11, 7, 6, 2, 9, 77, -2, -4, -5, -10};
 
 var negativoSinNegativo = listaEnteros.FirstOrDefault(numero => numero <= 0);
 var negativoConNegativo = listaEnterosConNegativo.FirstOrDefault(numero => numero <= 0);
@@ -230,7 +230,7 @@ var primeras5Puntuaciones = listaPuntuaciones.Take(5);
 Console.WriteLine("----------------------------------------------------------------");
 
 imprimirDouble("17. Lista puntuaciones: ", listaPuntuaciones);
-Console.Write($"17. Primeras 5 puntuaciones: ");
+Console.Write("17. Primeras 5 puntuaciones: ");
 
 foreach (var item in primeras5Puntuaciones)
 {
@@ -241,15 +241,118 @@ Console.WriteLine();
 Console.WriteLine("----------------------------------------------------------------");
 
 // 18. Salta los primeros 3 elementos de una lista de nombres y obtén los siguientes.
+
+var saltoNombres = listaNombres.Skip(3).ToList();
+
+Console.WriteLine("----------------------------------------------------------------");
+
+imprimirString("18. Lista nombres: ", listaNombres);
+Console.Write("18. Lista con salto de 3: ");
+
+foreach (var item in saltoNombres)
+{
+    Console.Write($"{item} ");
+}
+
+Console.WriteLine();
+Console.WriteLine("----------------------------------------------------------------");
+
 // 19. Elimina los elementos duplicados en una lista de números.
+
+var sinDuplicados = listaEnteros.Distinct().ToList();
+
+Console.WriteLine("----------------------------------------------------------------");
+
+imprimirInt("19. Lista nombres: ", listaEnteros);
+imprimirInt("19. Lista sin duplicados: ", sinDuplicados);
+
+Console.WriteLine();
+Console.WriteLine("----------------------------------------------------------------");
+
 // 20. Convierte una lista de palabras en una lista.
+
 // 21. Convierte una lista de números en un array.
+
+var numerosArray = listaEnteros.ToArray();
+
+Console.WriteLine("----------------------------------------------------------------");
+
+imprimirInt("21. Lista: ", listaEnteros);
+Console.Write("21. Array: ");
+
+foreach (var item in numerosArray)
+{
+    Console.Write($"{item} ");
+}
+
+Console.WriteLine();
+Console.WriteLine("----------------------------------------------------------------");
+
 // 22. Filtra los números negativos de una lista y ordénalos de menor a mayor.
+
+var numerosNegativos = listaEnterosConNegativo.Where(numero => numero < 0).OrderBy(numero => numero).ToList();
+
+Console.WriteLine("----------------------------------------------------------------");
+
+imprimirInt("22. Lista números: ", listaEnteros);
+imprimirInt("22. Negativos ordenados: ", numerosNegativos);
+
+Console.WriteLine();
+Console.WriteLine("----------------------------------------------------------------");
+
 // 23. Obtén una lista de longitudes de cada palabra en una lista de palabras.
+
+var longitudesPalabras = listaNombres.Select(palabra => palabra.Length).ToList();
+
+Console.WriteLine("----------------------------------------------------------------");
+
+imprimirString("23. Lista palabras: ", listaNombres);
+imprimirInt("23. Longitudes: ", longitudesPalabras);
+
+Console.WriteLine();
+Console.WriteLine("----------------------------------------------------------------");
+
 // 24. Ordena una lista de salarios de menor a mayor y obtén los 3 más bajos.
+
+var listaSalarios = new List<double> {5000, 3000, 7000, 4000, 6000};
+var salariosOrdenados = listaSalarios.OrderBy(salario => salario).ToList();
+var primeros3Salarios = salariosOrdenados.Take(3).ToList();
+
+Console.WriteLine("----------------------------------------------------------------");
+
+imprimirDouble("24. Lista salarios: ", listaSalarios);
+imprimirDouble("24. 3 más bajos: ", primeros3Salarios);
+
+Console.WriteLine();
+Console.WriteLine("----------------------------------------------------------------");
+
 // 25. Obtén los nombres más largos en una lista de nombres.
+
+var nombresLargos = listaNombres.OrderByDescending(nombre => nombre.Length).ToList();
+
+Console.WriteLine("----------------------------------------------------------------");
+
+imprimirString("25. Lista nombres: ", listaNombres);
+imprimirString("25. Nombres más largos: ", nombresLargos);
+
+Console.WriteLine();
+Console.WriteLine("----------------------------------------------------------------");
+
 // 26. Encuentra el primer número mayor a 100 en una lista de precios.
+
+var primerNumeroMayor100 = listaPrecios.FirstOrDefault(precio => precio > 100);
+
+Console.WriteLine("----------------------------------------------------------------");
+
+imprimirDouble("26. Lista precios: ", listaPrecios);
+Console.WriteLine($"Primer número mayor a 100: {primerNumeroMayor100}");
+
+Console.WriteLine();
+Console.WriteLine("----------------------------------------------------------------");
+
 // 27. Encuentra el último día del mes en una lista de fechas.
+
+
 // 28. Obtén el primer nombre que empieza con 'A' en una lista de nombres o un valor por
 // defecto si no hay ninguno.
 // 29. Encuentra el último número impar en una lista de enteros o un valor por defecto si no hay
