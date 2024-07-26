@@ -22,10 +22,37 @@ public class Profesor : Persona
         Cursos = cursos;
     }
 
+    public static List<string> AgregarCursos()
+    {
+        List<string> cursos = new List<string>();
+        Console.WriteLine("----------------------------------------------------------------");
+        Console.WriteLine("                       Agregar cursos");
+        Console.WriteLine("----------------------------------------------------------------");
+        var flag = true;
+        while (flag)
+        {
+            Console.Write("Nombre del curso: ");
+            string? curso = Console.ReadLine();
+            cursos.Add(curso);
+            Console.Write("¿Desea agregar otro curso? (s/n): ");
+            var respuesta = Console.ReadLine();
+            if (respuesta.ToLower() != "s")
+            {
+                flag = false;
+            }
+            Console.WriteLine();
+        }
+        Console.WriteLine("Los cursos se han agregado correctamente!");
+        Console.WriteLine("----------------------------------------------------------------");
+
+        return cursos;
+    }
+
+
     public override void MostrarDetalles()
     {
         base.MostrarDetalles();
-        Console.Write(@$" {Asignatura,-14} | ${Salario.ToString("#,##"),-4} | {Antiguedad,-3} años |");
+        Console.Write(@$" {Asignatura,-14} | ${Salario.ToString("#,##"),-9} | {Antiguedad,-3} años |");
 
         foreach (var curso in Cursos)
         {
@@ -43,5 +70,35 @@ public class Profesor : Persona
     public void ObtenerSalario()
     {
         Console.WriteLine($"El salario del profesor {Nombre} {Apellido} es: {Salario}");
+    }
+
+        public void ActualizarMisDatos()
+    {
+        Console.Write("Nombre: ");
+        Nombre = Console.ReadLine();
+        Console.Write("Apellido: ");
+        Apellido = Console.ReadLine();
+        Console.Write("Tipo de documento: ");
+        TipoDocumento = Console.ReadLine();
+        Console.Write("Email: ");
+        Email = Console.ReadLine();
+        Console.Write("Teléfono: ");
+        Telefono = Console.ReadLine();
+        Console.Write("Asignatura: ");
+        Asignatura = Console.ReadLine();
+        Console.Write("Salario (COP): ");
+        Salario = double.Parse(Console.ReadLine());
+        Console.Write("Fecha de contrato (AAAA/MM/DD): ");
+        FechaContratacion = DateTime.Parse(Console.ReadLine());
+    }
+
+    public string? MiNumeroDocumento()
+    {
+        return NumeroDocumento;
+    }
+
+    public double MiSalario()
+    {
+        return Salario;
     }
 }

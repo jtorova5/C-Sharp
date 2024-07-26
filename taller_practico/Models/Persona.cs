@@ -26,6 +26,8 @@ public class Persona
         Telefono = telefono.Trim();
     }
 
+    
+
     public virtual void MostrarDetalles()
     {
         Console.Write(@$"| {Nombre + " " + Apellido, -22} | {TipoDocumento}: {NumeroDocumento, -11} | {Email, -21} | {Telefono, -10} |");
