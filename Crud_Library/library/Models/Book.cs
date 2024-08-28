@@ -11,9 +11,13 @@ public class Book
     public Guid Id { get; set; }
 
     [Column("title")]
+    [RegularExpression(@"^[a-z\s]+$", ErrorMessage = "The field must be in lowercase.")]
+    [MaxLength(255, ErrorMessage = "The field must be at most {1} characters.")]
     public required string Title { get; set; }
 
     [Column("author")]
+    [RegularExpression(@"^[a-z\s]+$", ErrorMessage = "The field must be in lowercase.")]
+    [MaxLength(255, ErrorMessage = "The field must be at most {1} characters.")]
     public string? Author { get; set; }
 
     [Column("publication_year")]
@@ -29,11 +33,17 @@ public class Book
     public required int NumberOfPages { get; set; }
 
     [Column("genre")]
+    [RegularExpression(@"^[a-z\s]+$", ErrorMessage = "The field must be in lowercase.")]
+    [MaxLength(255, ErrorMessage = "The field must be at most {1} characters.")]
     public required string Genre { get; set; }
 
     [Column("editorial")]
+    [RegularExpression(@"^[a-z\s]+$", ErrorMessage = "The field must be in lowercase.")]
+    [MaxLength(255, ErrorMessage = "The field must be at most {1} characters.")]
     public string? Editorial { get; set; }
 
     [Column("original_language")]
+    [RegularExpression(@"^[a-z\s]+$", ErrorMessage = "The field must be in lowercase.")]
+    [MaxLength(100, ErrorMessage = "The field must be at most {1} characters.")]
     public required string OriginalLanguage { get; set; }
 }
