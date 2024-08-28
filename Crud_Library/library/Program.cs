@@ -11,7 +11,7 @@ var dbHost = Environment.GetEnvironmentVariable("DB_HOST");
 var dbPort = Environment.GetEnvironmentVariable("DB_PORT");
 var dbName = Environment.GetEnvironmentVariable("DB_NAME");
 var dbUser = Environment.GetEnvironmentVariable("DB_USER");
-var dbPassword = Environment.GetEnvironmentVariable("DB_password");
+var dbPassword = Environment.GetEnvironmentVariable("DB_PASSWORD");
 var mySqlConnection = $"server={dbHost};port={dbPort};database={dbName};uid={dbUser};password={dbPassword}";
 
 // Add services to the container.
