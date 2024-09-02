@@ -60,10 +60,10 @@ public abstract class Empresa
             Console.WriteLine();
             Console.Write("Nombre: ");
             var nombre = Console.ReadLine().Trim().ToLower();
-            Cliente.ActualizarNombre(nombre);
+            Persona.ActualizarNombre(nombre);
             Console.Write("Apellido: ");
             var apellido = Console.ReadLine().Trim().ToLower();
-            Cliente.ActualizarApellido(apellido);
+            Persona.ActualizarApellido(apellido);
             empleado.NombreCompleto = nombre + " " + apellido;
             Console.Write("Posición: ");
             empleado.Posicion = Console.ReadLine().Trim().ToLower();
